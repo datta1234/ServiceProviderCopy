@@ -1,0 +1,117 @@
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+android/app/build/
+android/.gradle
+
+# Visual Studio Code
+#
+.vscode/
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# BUCK
+buck-out/
+\.buckd/
+*.keystore
+!debug.keystore
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+*/fastlane/report.xml
+*/fastlane/Preview.html
+*/fastlane/screenshots
+
+# Bundle artifact
+*.jsbundle
+
+# CocoaPods
+/ios/Pods/
+
+*.hprof
+ios/Pods/Pods.xcodeproj/project.pbxproj
+android/.gradle/6.7.1/fileHashes/resourceHashesCache.bin
+android/.gradle/6.7.1/javaCompile/classAnalysis.bin
+android/.gradle/6.7.1/javaCompile/jarAnalysis.bin
+.gitignore
+.gitignore
+android/.gradle/buildOutputCleanup/outputFiles.bin
+android/app/build/generated/assets/react/release/index.android.bundle
+android/app/build/generated/sourcemaps/react/release/index.android.bundle.map
+android/app/build/intermediates/assets/release/index.android.bundle
+.gitignore
+.gitignore
+.gitignore
+.gitignore
+.gitignore
+.gitignore
+.gitignore
+.gitignore
+.gitignore
+.gitignore
+.gitignore
+android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml
+android/app/build/generated/res/google-services/release/values/values.xml
+android/app/build/intermediates/incremental/release-mergeJavaRes/merge-state
+android/app/build/intermediates/intermediary_bundle/release/intermediary-bundle.aab
+android/app/build/intermediates/linked_res_for_bundle/release/bundled-res.ap_
+.gitignore
+.gitignore
+.gitignore
+.gitignore
+.gitignore
+.gitignore
+.gitignore
+android/app/build/intermediates/merged_res_blame_folder/release/out/multi-v2/values.json
+.gitignore
+.gitignore
+.gitignore
+android/app/build/intermediates/packaged_manifests/release/AndroidManifest.xml
+.gitignore
+.gitignore
+.gitignore
+android/app/build/intermediates/res/merged/release/drawable-mdpi_src_assets_icons_gray_tempprofile.png.flat
+.gitignore
+android/app/build/intermediates/runtime_symbol_list/release/R.txt
+.gitignore
+.gitignore
+.gitignore
+.gitignore
+.gitignore
+android/.gradle/buildOutputCleanup/outputFiles.bin

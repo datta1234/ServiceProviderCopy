@@ -1,0 +1,21 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Myriad/Myriad-Pro-Regular.ttf",
+      "sha1": "d6efdc8c120df6af92ad5836c150bcbdac58b44e"
+    },
+    {
+      "path": "src/assets/fonts/Helvetica/Helvetica-Bold.ttf",
+      "sha1": "5ebf61d6abc52feafe972df8a4c06f120f401fe0"
+    },
+    {
+      "path": "src/assets/fonts/Helvetica/Helvetica.ttf",
+      "sha1": "97e2be433a5c4f622112b723d9ea9a23df6338f4"
+    },
+    {
+      "path": "src/assets/fonts/Montserrat/helvetica-light.ttf",
+      "sha1": "98cfe7692bfc754c2007b3689a8e81e739a06ea1"
+    }
+  ]
+}

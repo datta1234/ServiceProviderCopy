@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "989835900525",
+    "firebase_url": "https://lawnq-au-default-rtdb.firebaseio.com",
+    "project_id": "lawnq-au",
+    "storage_bucket": "lawnq-au.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989835900525:android:0b9055106b046edde13164",
+        "android_client_info": {
+          "package_name": "com.lawnq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989835900525-5j5lb0tv0uh8q19f31upgmapcm53u5gv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDli-woyeNqFmsdTNQQlPv4GY3dGUGkc8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "989835900525-5j5lb0tv0uh8q19f31upgmapcm53u5gv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "989835900525-2oikm8s2rvo667j2f1i15tfs4hbt5lvu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.lawnq"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989835900525:android:cc286ac059a98d86e13164",
+        "android_client_info": {
+          "package_name": "com.lawnq_sp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989835900525-5j5lb0tv0uh8q19f31upgmapcm53u5gv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDli-woyeNqFmsdTNQQlPv4GY3dGUGkc8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "989835900525-5j5lb0tv0uh8q19f31upgmapcm53u5gv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "989835900525-2oikm8s2rvo667j2f1i15tfs4hbt5lvu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.lawnq"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
