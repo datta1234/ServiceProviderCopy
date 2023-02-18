@@ -63,6 +63,7 @@ const INITIAL_BOOKING_DATA = {
   ServiceFee: "",
   ServiceProviderId: "",
   ServiceTypeDesc: "",
+
 };
 
 type CustomStyleProp = StyleProp<ViewStyle> | Array<StyleProp<ViewStyle>>;
@@ -73,7 +74,7 @@ interface IBookingDetailScreenProps {
   navigation?: any;
 }
 
-const BookingDetailScreen: React.FC<IBookingDetailScreenProps> = ({}) => {
+const BookingDetailScreen: React.FC<IBookingDetailScreenProps> = ({ }) => {
   const theme = useTheme();
   const { colors } = theme;
   const styles = useMemo(() => createStyles(theme), [theme]);
@@ -190,13 +191,11 @@ const BookingDetailScreen: React.FC<IBookingDetailScreenProps> = ({}) => {
     getCustomerDeviceID(
       payload,
       (data: any) => {
-        // console.log("getSPDeviceInfo data:", data);
         const { DeviceId, PlatformOs } = data[0];
         setCinfo({
           DeviceId,
           PlatformOs,
         });
-        // fetchPathConversationId();
       },
       (err: any) => {
         console.log("err:", err);
@@ -389,13 +388,13 @@ const BookingDetailScreen: React.FC<IBookingDetailScreenProps> = ({}) => {
         <CHAT_DARK_GREEN />
       </TouchableOpacity>
 
-      {(BookingStatus.includes("ACCEPT") && BookingTypeDesc === "Queue Now") ||
-        (viewQueueLater() && (
-          <>
-            <View style={{ width: 20 }} />
-            <Complete />
-          </>
-        ))}
+      {((BookingStatus.includes("ACCEPT") && BookingTypeDesc === "Queue Now") ||
+        (viewQueueLater())) ? (
+        <>
+          <View style={{ width: 20 }} />
+          <Complete />
+        </>
+      ) : null}
     </View>
   );
 
