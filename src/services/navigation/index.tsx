@@ -24,6 +24,7 @@ import LandingScreen from "@screens/landing/LandingScreen";
 
 import SignupScreen from "@screens/signup/SignupScreen";
 import SetupPassword from "@screens/signup/SetupPassword";
+import ServiceType from "@screens/signup/ServiceType";
 import OTPScreen from "@screens/signup/otp/OTPScreen";
 import SetLocationScreen from "@screens/signup/set-location/SetLocation";
 
@@ -188,6 +189,7 @@ const Navigation = () => {
           component={SetLocationScreen}
         />
         <Stack.Screen name={SCREENS.SET_PASS} component={SetupPassword} />
+        <Stack.Screen name={SCREENS.SERVICE_TYPE} component={ServiceType} />
         <Stack.Screen name={SCREENS.OTP} component={OTPScreen} />
 
         <Stack.Screen name={SCREENS.WELCOME} component={WelcomeScreen} />

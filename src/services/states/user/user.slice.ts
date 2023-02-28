@@ -28,6 +28,7 @@ interface UserState {
     EmailAddress: string;
     Birthday: string;
     ABN: string;
+    BussinessName:string;
   };
   Address: {
     Alias: string;

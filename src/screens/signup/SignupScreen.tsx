@@ -70,7 +70,7 @@ const SignupScreen: React.FC<ISignupScreenProps> = ({ navigation }) => {
   const { basicSignupDetails, Address, readableBirthday } = useSelector(
     (state: RootState) => state.user
   );
-  const { Firstname, Lastname, MobileNumber, EmailAddress, Birthday } =
+  const { Firstname, Lastname, MobileNumber, EmailAddress, Birthday, BussinessName } =
     basicSignupDetails;
   console.log("basicSignupDetails:", basicSignupDetails);
 
@@ -93,6 +93,7 @@ const SignupScreen: React.FC<ISignupScreenProps> = ({ navigation }) => {
         address: Address.Alias,
         birthday: readableBirthday,
         abn: "",
+        bussiness:BussinessName,
       };
     }, [Address.Alias]),
     resolver: yupResolver(BasicRegistrationSchema),
@@ -109,7 +110,7 @@ const SignupScreen: React.FC<ISignupScreenProps> = ({ navigation }) => {
    */
   const onDispatchBasicDetails = () => {
     const values = getValues();
-    const { email, mobile, firstName, lastName, abn } = values;
+    const { email, mobile, firstName, lastName, abn, bussiness } = values;
 
     dispatch(
       onSaveBasicSignupDetails({
@@ -119,13 +120,16 @@ const SignupScreen: React.FC<ISignupScreenProps> = ({ navigation }) => {
         Lastname: lastName,
         Birthday,
         ABN: !abn ? "" : abn,
+        BussinessName: bussiness,
       })
     );
   };
 
   const onNext = () => {
-    onDispatchBasicDetails();
-    NavigationService.navigate(SCREENS.SET_PASS);
+    // onDispatchBasicDetails();
+    // NavigationService.navigate(SCREENS.SET_PASS);
+    // NavigationService.navigate(SCREENS.SERVICE_TYPE);
+    NavigationService.navigate(SCREENS.SERVICE_TYPE);
   };
 
   const onLogin = () => {
@@ -150,6 +154,7 @@ const SignupScreen: React.FC<ISignupScreenProps> = ({ navigation }) => {
       email: EmailAddress,
       address: Address.Alias,
       birthday: readableBirthday,
+      bussiness: BussinessName,
     });
   }, [Address]);
 
@@ -190,7 +195,8 @@ const SignupScreen: React.FC<ISignupScreenProps> = ({ navigation }) => {
     <View style={{ flexGrow: 1 }}>
       <CommonButton
         text={"Next"}
-        onPress={handleSubmit(onNext)}
+        // onPress={handleSubmit(onNext)}
+        onPress={onNext}
         style={{ borderRadius: 5 }}
       />
     </View>
@@ -257,19 +263,19 @@ const SignupScreen: React.FC<ISignupScreenProps> = ({ navigation }) => {
         <View style={{ flexGrow: 1 }}>
           <InputText
             control={control}
-            name="firstName"
-            label="First Name"
-            rightIcon={<USER />}
-            isError={errors?.firstName}
+            name="abn"
+            label="ABN (Optional)"
+            rightIcon={<CALENDAR />}
+            isError={errors.abn}
           />
           <Separator />
 
           <InputText
             control={control}
-            name="lastName"
-            label="Last Name"
-            rightIcon={<USER />}
-            isError={errors.lastName}
+            name="email"
+            label="Email"
+            rightIcon={<MAIL />}
+            isError={errors.email}
           />
           <Separator />
 
@@ -286,12 +292,22 @@ const SignupScreen: React.FC<ISignupScreenProps> = ({ navigation }) => {
 
           <InputText
             control={control}
-            name="email"
-            label="Email"
-            rightIcon={<MAIL />}
-            isError={errors.email}
+            name="firstName"
+            label="First Name"
+            rightIcon={<USER />}
+            isError={errors?.firstName}
           />
           <Separator />
+
+          <InputText
+            control={control}
+            name="lastName"
+            label="Last Name"
+            rightIcon={<USER />}
+            isError={errors.lastName}
+          />
+          <Separator />
+
 
           <InputText
             control={control}
@@ -311,16 +327,16 @@ const SignupScreen: React.FC<ISignupScreenProps> = ({ navigation }) => {
             rightIcon={<CALENDAR />}
             isError={errors.birthday}
           />
+
           <Separator />
 
           <InputText
             control={control}
-            name="abn"
-            label="ABN (Optional)"
-            rightIcon={<CALENDAR />}
-            isError={errors.abn}
+            name="bussiness"
+            label="Bussiness Name"
+            rightIcon={<USER />}
+            isError={errors.bussiness}
           />
-
           <Separator />
           <Separator />
         </View>

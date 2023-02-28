@@ -7,6 +7,7 @@ export const SCREENS = {
   SIGNUP: "Signup",
   SET_LOCATION: "SetLocation",
   SET_PASS: "SetupPassword",
+  SERVICE_TYPE:"ServiceType",
   OTP: "OTP",
 
   HOME: "Home",
